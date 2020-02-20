@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFF4264E-FA38-41D2-9226-FD3972366A15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedisSample.DAL</RootNamespace>
+    <AssemblyName>RedisSample.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\AccountActivity.cs" />
+    <Compile Include="Models\AccountActivityType.cs" />
+    <Compile Include="Models\AccountActivityTypeByBank.cs" />
+    <Compile Include="Models\AccountBAA.cs" />
+    <Compile Include="Models\AccountBAABank.cs" />
+    <Compile Include="Models\AccountBAABankHistory.cs" />
+    <Compile Include="Models\AccountBAAHistory.cs" />
+    <Compile Include="Models\ActivityBankInfo.cs" />
+    <Compile Include="Models\ActivityBankInfoAccount.cs" />
+    <Compile Include="Models\AdminFirm.cs" />
+    <Compile Include="Models\AdminFirmAccount.cs" />
+    <Compile Include="Models\AdminFirmBankAccount.cs" />
+    <Compile Include="Models\AdminFirmBankAccountHistory.cs" />
+    <Compile Include="Models\AdminFirmBankAccountUser.cs" />
+    <Compile Include="Models\AdminFirmBankAccountUserHistory.cs" />
+    <Compile Include="Models\AdminFirmHistory.cs" />
+    <Compile Include="Models\AdminFirmProduct.cs" />
+    <Compile Include="Models\AdminFirmProductHistory.cs" />
+    <Compile Include="Models\AdminUser.cs" />
+    <Compile Include="Models\AdminUserHistory.cs" />
+    <Compile Include="Models\ApproveData.cs" />
+    <Compile Include="Models\Bank.cs" />
+    <Compile Include="Models\BankBranch.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\CurrencyCode.cs" />
+    <Compile Include="Models\C__MigrationHistory.cs" />
+    <Compile Include="Models\Directive.cs" />
+    <Compile Include="Models\DirectiveData.cs" />
+    <Compile Include="Models\DirectiveDetail.cs" />
+    <Compile Include="Models\DirectiveHistory.cs" />
+    <Compile Include="Models\DirectivePattern.cs" />
+    <Compile Include="Models\DirectivePatternDetail.cs" />
+    <Compile Include="Models\ExceptionLog.cs" />
+    <Compile Include="Models\Firm.cs" />
+    <Compile Include="Models\FirmAccount.cs" />
+    <Compile Include="Models\FirmAccountHistory.cs" />
+    <Compile Include="Models\FirmHistory.cs" />
+    <Compile Include="Models\InvoiceData.cs" />
+    <Compile Include="Models\InvoiceDetail.cs" />
+    <Compile Include="Models\InvoiceHeader.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\MonthlyPlans.cs" />
+    <Compile Include="Models\OfflineDirective.cs" />
+    <Compile Include="Models\OperationRoles.cs" />
+    <Compile Include="Models\OperationUser.cs" />
+    <Compile Include="Models\OperationUserHistory.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductProperty.cs" />
+    <Compile Include="Models\ProductPropertyValue.cs" />
+    <Compile Include="Models\ProductPropertyValueHistory.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\RepositoryLog.cs" />
+    <Compile Include="Models\Roles.cs" />
+    <Compile Include="Models\SalaryData.cs" />
+    <Compile Include="Models\SalaryHeader.cs" />
+    <Compile Include="Models\TaxData.cs" />
+    <Compile Include="Models\TaxHeader.cs" />
+    <Compile Include="Models\TransactionLog.cs" />
+    <Compile Include="Models\TransactionODataLog.cs" />
+    <Compile Include="Models\UserLog.cs" />
+    <Compile Include="Models\ZiraatFile.cs" />
+    <Compile Include="Models\ZiraatFileContent.cs" />
+    <Compile Include="Models\ZiraatFileContentData.cs" />
+    <Compile Include="Models\ZiraatFileHistory.cs" />
+    <Compile Include="Models\ZiraatFileTransaction.cs" />
+    <Compile Include="Models\ZiraatServiceLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
